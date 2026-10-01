@@ -1,3 +1,13 @@
+## v0.6.0 (2026-10-01)
+
+### Breaking
+
+- la variable LEGACY n'existe plus.
+
+### Fixes
+
+- supprime la variable LEGACY (#15)
+
 ## v0.5.0 (2026-10-01)
 
 ### Features
