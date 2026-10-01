@@ -3,3 +3,4 @@
 ### Features
 
 - ajoute la commande hello (#1)
+- ajout manuel
