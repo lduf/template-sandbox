@@ -1,3 +1,13 @@
+## v0.7.0 (2026-10-01)
+
+### Breaking
+
+- l'API passe en v2.
+
+### Features
+
+- API v2 (#16)
+
 ## v0.6.0 (2026-10-01)
 
 ### Breaking
