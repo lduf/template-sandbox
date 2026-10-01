@@ -10,12 +10,12 @@ on:
 jobs:
   pr-checks:
     if: github.event_name == 'pull_request'
-    uses: lduf/.github/.github/workflows/pr-checks.yml@claude/phase2-release
+    uses: lduf/.github/.github/workflows/pr-checks.yml@main
     permissions: { contents: read, pull-requests: read }
     with: { openapi_path: openapi.json }
   release:
     if: github.event_name != 'pull_request'
-    uses: lduf/.github/.github/workflows/release.yml@claude/phase2-release
+    uses: lduf/.github/.github/workflows/release.yml@main
     permissions: { contents: read, packages: write, pull-requests: read }
     with: { redeploy_version: "${{ inputs.version }}" }
     secrets: inherit
