@@ -1,3 +1,9 @@
+## v0.5.0 (2026-10-01)
+
+### Features
+
+- renomme /api/items en /api/things (#14)
+
 ## v0.4.0 (2026-10-01)
 
 ### Features
