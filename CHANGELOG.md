@@ -1,3 +1,17 @@
+## v0.4.0 (2026-10-01)
+
+### Features
+
+- rapide 2 (#11)
+
+### Fixes
+
+- rapide 1 (#10)
+
+### Performance
+
+- rapide 3 (#12)
+
 ## v0.3.0 (2026-10-01)
 
 ### Features
