@@ -1,0 +1,27 @@
+[project]
+name = "template-sandbox"
+version = "0.1.0"
+description = "Bac à sable des workflows de release (Phase 2)"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+package = false
+
+[tool.commitizen]
+name = "cz_customize"
+tag_format = "v$version"
+version_provider = "uv"
+version_scheme = "semver2"
+major_version_zero = true
+update_changelog_on_bump = true
+bump_message = "chore(release): v$new_version"
+
+[tool.commitizen.customize]
+bump_pattern = '^((BREAKING[\-\ ]CHANGE|feat|fix|perf)(\([^()\r\n]*\))?(!)?|\w+(\([^()\r\n]*\))?!):'
+bump_map = { '^.+!$' = "MAJOR", '^BREAKING[\-\ ]CHANGE' = "MAJOR", '^feat' = "MINOR", '^fix' = "PATCH", '^perf' = "PATCH" }
+bump_map_major_version_zero = { '^.+!$' = "MINOR", '^BREAKING[\-\ ]CHANGE' = "MINOR", '^feat' = "MINOR", '^fix' = "PATCH", '^perf' = "PATCH" }
+commit_parser = '^(?P<change_type>feat|fix|perf|BREAKING CHANGE)(?:\((?P<scope>[^()\r\n]*)\))?(?P<breaking>!)?:\s(?P<message>.*)?'
+changelog_pattern = '^((BREAKING[\-\ ]CHANGE|feat|fix|perf)(\([^()\r\n]*\))?(!)?|\w+(\([^()\r\n]*\))?!):'
+change_type_map = { "BREAKING CHANGE" = "Breaking", feat = "Features", fix = "Fixes", perf = "Performance" }
+change_type_order = ["Breaking", "Features", "Fixes", "Performance"]
