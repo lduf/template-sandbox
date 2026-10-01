@@ -1,6 +1,6 @@
 [project]
 name = "template-sandbox"
-version = "0.2.0"
+version = "0.2.1"
 description = "Bac à sable des workflows de release (Phase 2)"
 requires-python = ">=3.12"
 dependencies = []
