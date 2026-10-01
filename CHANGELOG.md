@@ -55,3 +55,4 @@
 ### Features
 
 - ajoute la commande hello (#1)
+- manuel
